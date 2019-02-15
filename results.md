@@ -24,7 +24,7 @@
 |21|jcolbur1.md|35.227.45.49||
 |22|jmcmicha.md|34.73.46.21|<html> <body> Zach McMichael </body> </html>|
 |23|jsamar1.md|35.243.152.89|jsamar1 - Jacob Conner Samar|
-|24|kbloodwo.md|34.73.95.68|<html> <head> <style> img{ border-radius:50%| width: 300px| height: 300px| } .container { position:relative| text-align: center| color: white| top:30%| font-size: 25px| -webkit-text-stroke: 2px black| } .name{ position: absolute| top: 50%| left: 50%| transform: translate(-50%, -50%)| } .window{ height:100%| width:100%| position:relative| } </style> </head> <body> <div class = "window"> <div class="container"> <div class="name"><h1>Kody Bloodworth</h1></div> <img src = "frog.jpg"> </div> </div> </body> </html>|
+|24|kbloodwo.md|34.73.95.68||
 |25|lhenslee.md|34.73.119.123|<html> <body> Lane Henslee </body> </html>|
 |26|lparke23.md|34.73.48.161|<html> <body> Luke Parker </body> </html>|
 |27|lxc297.md|35.229.51.154|<html> <head> <style> body { margin: 0| background-color: #76061e| } .test { background-color: #bf0a30| } .base { margin: 0| padding: 0| width: 100%| height: 50px| color: #ffffff| font-family: "arial", sans-serif| text-align: center| font-size: 20px| } </style> </head> <body> <div class="base" style="background-color: #bf0a30"> Todd Allen </div> <div class="base" style="background-color: #a7092a"></div> <div class="base" style="background-color: #8f0724"></div> </body> </html>|
