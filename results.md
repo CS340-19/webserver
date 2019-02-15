@@ -35,7 +35,7 @@
 |32|ssteinb2.md|34.73.57.203|<html> <body> Samuel Steinberg </body> </html>|
 |33|tfry2.md|35.196.210.77|<html> <body> Tanner Fry </body> </html>|
 |34|twheaton.md|34.73.119.104|<html> <body> Tucker's New Web Server </body> </html>|
-|35|vzenkov.md|35.196.52.158|<html> <body> Audris Mockus </body> </html>|
+|35|vzenkov.md|35.196.52.158|<html> <body> Viktor Zenkov was here </body> </html>|
 |36|yma29.md|34.73.48.64|<html> <body> Yucheng Ma </body> </html>|
 |37|ysun60.md|35.237.149.214|<html> <body> Yiming Sun </body> </html>|
 | |bhowel13|nothing||
