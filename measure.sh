@@ -25,7 +25,8 @@ git commit -m 'Current status'
 git push
 
 
-git log --format="%h" | while read i; do git show $i:results.md 2> /dev/null; done | grep -v ';'  | awk -F\| '{if (NF>3)print $(NF-1)";"$(NF-3)}' | sort -u | grep -v '^;'  | grep -v '^-' | cut -d\; -f2  | sort -u > a
-join -v2 a b
-#count with nonempty response
-git log --format="%h" | while read i; do git show $i:results.md 2> /dev/null; done | grep -v ';'  | awk -F\| '{if (NF>3)print $(NF-1)";"$(NF-3)}' | sort -u | grep -v '^;'  | grep -v '^-' | wc
+cat results.md  | grep '||$' | cut -d\| -f3  | sort -u > empty
+
+git log --format="%h" | while read i; do git show $i:results.md 2> /dev/null; done | grep -Ff empty  | sort -u | grep -v '||$' | cut -d\| -f3 | uniq | awk '{ "OK;" $1}' >> results.md
+
+
