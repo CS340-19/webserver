@@ -20,13 +20,26 @@ echo "|Row|netid|IP|Response|" >> results.md
 echo "|--|-----|--|--------|">> results.md
 sed 's/;/|/g;s/^/|/;s/$/|/' complete.works >> results.md
 cut -d\; -f2 complete.works| sed 's/\.md$//' | join -v2 - eml | awk '{print "| |" $1 "|nothing||"}'>> results.md 
+
+
+
+cat results.md  | grep '||$' | cut -d\| -f3  | sort -u > empty
+cat results.md | grep -vFf empty > results.md1
+mv results.md1 results.md
+
+echo "" >> results.md
+echo "Historic" >> results.md
+echo "" >> results.md
+echo "|netid|Response|" >> results.md
+echo "|--|--------|">> results.md
+git log --format="%h" | while read i; do git show $i:results.md 2> /dev/null; done |\
+   grep -Ff empty  | sort -u | grep -v '||$' | cut -d\| -f3,5 | sort -u | sed 's/$/|/;s/^/|/' >> results.md
+
+
 git add results.md
 git commit -m 'Current status'
 git push
 
 
-cat results.md  | grep '||$' | cut -d\| -f3  | sort -u > empty
-
-git log --format="%h" | while read i; do git show $i:results.md 2> /dev/null; done | grep -Ff empty  | sort -u | grep -v '||$' | cut -d\| -f3 | uniq | awk '{ "OK;" $1}' >> results.md
 
 
